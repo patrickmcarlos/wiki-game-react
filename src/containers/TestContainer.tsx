@@ -10,7 +10,7 @@ export const TestContainer: React.FC = () => {
         try {
             const res = await getRandomArticles(numArticles);
 
-            setArticles(JSON.stringify(res.query.random, null, 4));
+            setArticles(JSON.stringify(res.data, null, 4));
         } catch (e) {
             console.error('There was an issue trying to fetch articles.', e);
         }
