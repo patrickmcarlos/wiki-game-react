@@ -23,8 +23,14 @@ export const TestComponent: React.FC<TestComponentProps> = ({
             />
             <button onClick={onSubmit}>Fetch articles</button>
             <hr />
-            <h1>Response</h1>
-            <span>{articles}</span>
+            {articles && (
+                <>
+                    <h1>Response</h1>
+                    <span>
+                        <pre>{articles}</pre>
+                    </span>
+                </>
+            )}
         </div>
     );
 };

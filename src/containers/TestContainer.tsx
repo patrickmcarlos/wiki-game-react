@@ -9,7 +9,8 @@ export const TestContainer: React.FC = () => {
     const handleSubmit = async () => {
         try {
             const res = await getRandomArticles(numArticles);
-            setArticles(JSON.stringify(res.data));
+
+            setArticles(JSON.stringify(res.query.random, null, 4));
         } catch (e) {
             console.error('There was an issue trying to fetch articles.', e);
         }
