@@ -11,6 +11,8 @@ export const TestComponent: React.FC<TestComponentProps> = ({
     onSubmit,
     onSetNumArticles,
 }) => {
+    const json = articles ? JSON.parse(articles) : {};
+
     return (
         <div>
             <h1>Get Random Articles!</h1>
@@ -26,8 +28,9 @@ export const TestComponent: React.FC<TestComponentProps> = ({
             {articles && (
                 <>
                     <h1>Response</h1>
+                    <h3>{json.title}</h3>
                     <span>
-                        <pre>{articles}</pre>
+                        <pre>{json.summary}</pre>
                     </span>
                 </>
             )}
