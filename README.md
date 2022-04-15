@@ -22,3 +22,6 @@ In the initial release of the game, "Speed Mode" will be available, where users 
 
 ### Curated Mode
 Curated mode, which is intended to be released after Speed Mode, will allow users to guess the title for the Article of the Day. Unlike the Speed game mode, instead of calculating scores, the number of attempts will be recorded. 
+
+## Links
+Backend Repo: https://github.com/patrickmcarlos/wiki-game-node
