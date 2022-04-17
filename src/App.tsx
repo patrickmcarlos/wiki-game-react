@@ -1,7 +1,6 @@
-import './App.css';
 import { TestContainer } from './containers/TestContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import MainLayout from './components/Layout';
+import { MainLayout } from './components';
 
 function App() {
     return (

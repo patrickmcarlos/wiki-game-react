@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section, SectionHeading } from '../shared/core-ui';
+import { Section, SectionHeading } from '../../shared/core-ui';
 
 interface TestComponentProps {
     articles?: string;

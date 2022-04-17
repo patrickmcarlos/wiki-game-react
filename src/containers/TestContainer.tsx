@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TestComponent } from '../components/TestComponent';
+import { TestComponent } from '../components/TestComponent/TestComponent';
 import { getRandomArticles } from '../api/articles';
 
 export const TestContainer: React.FC = () => {
