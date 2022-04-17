@@ -31,9 +31,7 @@ export const TestComponent: React.FC<TestComponentProps> = ({
                     <>
                         <h1>Response</h1>
                         <h3>{json.title}</h3>
-                        <span>
-                            <pre>{json.summary}</pre>
-                        </span>
+                        <span>{json.summary}</span>
                     </>
                 )}
             </Section>
