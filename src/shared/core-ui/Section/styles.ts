@@ -30,7 +30,7 @@ const secondarySectionHeadingStyle = css`
 
 const tertiarySectionStyle = css`
     background-color: var(--tertiary-section-color);
-    border: var(--teriary-section-border);
+    border: var(--tertiary-section-border);
 `;
 
 const tertiarySectionHeadingStyle = css`
@@ -62,9 +62,10 @@ const sectionStyle = (type: SectionType) => css`
 const sectionHeadingStyle = css`
     padding: 6px;
     border: 1px solid black;
+    margin: 8px 0;
 
     h2 {
-        font-size: 1.25em;
+        font-size: 1.05em;
         margin: 0;
     }
 `;
