@@ -1,8 +1,15 @@
 import { css } from '@emotion/react';
+import { SectionType } from './Section';
 
-const sectionStyle = css`
+const sectionStyle = (type: SectionType) => css`
     padding: 8px;
     border: 1px solid black;
+    ${type === SectionType.INTRODUCTION && `
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    `}
 `;
 
 const sectionHeadingStyle = css`
