@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-const sectionsWrapperStyle = css`
+const testComponentWrapperStyle = css`
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -11,4 +11,4 @@ const introductionHeadingStyle = css`
     margin: 2px 0px;
 `;
 
-export { sectionsWrapperStyle, introductionHeadingStyle };
+export { testComponentWrapperStyle, introductionHeadingStyle };

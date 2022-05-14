@@ -13,7 +13,9 @@ const bodyStyle = css`
 `;
 
 const contentStyle = css`
-    padding: 8px;
+    padding: 20px;
+    height: 100%;
+    border: 1px solid #a7d7f9;
 `;
 
 export { bodyStyle, mainLayoutStyle, contentStyle };

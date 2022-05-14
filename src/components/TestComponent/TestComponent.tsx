@@ -1,6 +1,14 @@
 import React from 'react';
-import { Section, SectionHeading, SectionType } from '../../shared/core-ui';
-import { introductionHeadingStyle, sectionsWrapperStyle } from './styles';
+import {
+    Section,
+    SectionHeading,
+    SectionType,
+    SectionVariant,
+} from '../../shared/core-ui';
+import {
+    introductionHeadingStyle,
+    testComponentWrapperStyle,
+} from './styles';
 
 interface TestComponentProps {
     articles?: string;
@@ -16,13 +24,18 @@ export const TestComponent: React.FC<TestComponentProps> = ({
     const json = articles ? JSON.parse(articles) : {};
 
     return (
-        <div css={sectionsWrapperStyle}>
-            <Section sectionType={SectionType.INTRODUCTION} >
+        <div css={testComponentWrapperStyle}>
+            <Section sectionType={SectionType.INTRODUCTION}>
                 <h2 css={introductionHeadingStyle}>Welcome to the Wiki Game</h2>
-                <p>Given the first paragraph of an article, you must guess what the title is.</p>
+                <p>
+                    Given the first paragraph of an article, you must guess what
+                    the title is.
+                </p>
             </Section>
-            <Section>
-                <SectionHeading>Get Random Articles!</SectionHeading>
+            <Section variant={SectionVariant.PRIMARY}>
+                <SectionHeading variant={SectionVariant.PRIMARY}>
+                    Get Random Articles!
+                </SectionHeading>
                 <label>Number of Articles</label>
                 <input
                     type="text"

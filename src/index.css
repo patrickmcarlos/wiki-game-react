@@ -12,6 +12,27 @@ code {
         monospace;
 }
 
+:root {
+    --section-heading-border: 1px solid rgba(0, 0, 0, 0.25);
+
+    --primary-section-color: rgba(206, 242, 224, 0.25);
+    --primary-section-heading-color:rgba(206, 242, 224, 0.9);
+    --primary-section-border: 1px solid rgb(206, 242, 224);
+
+    --secondary-section-color: rgba(206, 223, 242, 0.25);
+    --secondary-section-heading-color:rgba(206, 223, 242, 0.9);
+    --secondary-section-border: 1px solid rgb(206, 223, 242);
+
+    --tertiary-section-color: rgba(221, 206, 242, 0.25);
+    --tertiary-section-heading-color:rgba(221, 206, 242, 0.9);
+    --tertiary-section-border: 1px solid rgb(221, 206, 242);
+
+    --neutral-section-color: rgba(221, 221, 221, 0.25);
+    --neutral-section-heading-color:rgba(221, 221, 221, 0.9);
+    --neutral-section-border: 1px solid rgb(221, 221, 221);
+
+}
+
 p {
     margin: 0;
 }
